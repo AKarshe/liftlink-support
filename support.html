@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiftLink Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">LiftLink</a>
+            <a href="support.html" aria-current="page">Support</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Support</h1>
+        <p class="subtitle">Answers to common questions about LiftLink.</p>
+
+        <section class="card">
+            <h2>What you need</h2>
+            <ul>
+                <li>An iPhone running iOS 18 or later.</li>
+                <li>A HomeKit-compatible garage door opener, or a HomeKit bridge for your opener, already added to the Apple Home app.</li>
+                <li>A device passcode, so LiftLink can confirm it's you before opening a garage.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Getting started</h2>
+            <ol>
+                <li>Add your garage door opener in the Apple Home app and make sure you can control it there.</li>
+                <li>Open LiftLink and tap <strong>Connect to Apple Home</strong>.</li>
+                <li>Allow access when iOS asks. Your garages appear on the dashboard.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Troubleshooting</h2>
+
+            <h3>"Apple Home Access Required"</h3>
+            <p>LiftLink doesn't have permission to use Apple Home. Go to <em>Settings &gt; Privacy &amp; Security &gt; HomeKit</em> and turn on LiftLink.</p>
+
+            <h3>"No Garage Doors Found"</h3>
+            <p>LiftLink shows accessories that Apple Home reports as garage door openers. Check that your opener appears in the Apple Home app, and that the correct Home is selected in LiftLink's Settings.</p>
+
+            <h3>A garage shows "Unavailable"</h3>
+            <p>Apple Home can't reach the opener. Check that it has power and a network connection, and that your home hub (an Apple TV, HomePod, or iPad) is online. Pull down on the dashboard to refresh.</p>
+
+            <h3>"Obstructed" or "Jammed"</h3>
+            <p>The opener's safety sensor reported a problem. Check the doorway and the sensors, and clear any obstruction before trying again. LiftLink won't send an open command while an obstruction is reported.</p>
+
+            <h3>A garage shows "Position Unknown"</h3>
+            <p>The opener has reported that the door is opening or closing for over a minute without finishing, which usually means it has lost track of the door's position. LiftLink still lets you close the garage. Check that the door looks right, then check the opener or its HomeKit bridge: if the Apple Home app also shows the door stuck on "Opening…" or "Closing…", the opener isn't reporting its position correctly.</p>
+
+            <h3>"The garage did not respond in time"</h3>
+            <p>The opener accepted the command but didn't report movement. Many openers flash and beep for a few seconds before closing remotely; if the door is working normally, wait a moment and refresh. If it keeps happening, check the opener and its connection.</p>
+
+            <h3>"Passcode required"</h3>
+            <p>LiftLink needs a device passcode to verify it's you. Set one in <em>Settings &gt; Face ID &amp; Passcode</em> (or <em>Touch ID &amp; Passcode</em>).</p>
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact</h2>
+            <p>Found a bug or have a question? Open an issue and the developer will respond there.</p>
+            <p><a class="button" href="https://github.com/AKarshe/liftlink-support/issues/new">Open a support request</a></p>
+            <p class="note">Issues are public. Please don't include personal information such as your address, your home or garage names, or screenshots that show them.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Apple, Apple Home, HomeKit, Face ID, and Touch ID are trademarks of Apple Inc. LiftLink isn't affiliated with or endorsed by Apple Inc. or any garage-opener manufacturer.</p>
+    </footer>
+</body>
+</html>
